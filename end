@@ -1,0 +1,19 @@
+int a = 4;
+void setup() {
+  pinMode(a, OUTPUT);
+}
+
+void loop() {
+  mob (a, 300);
+  for (int i = 1000; i > 0; i = i - 50) {
+    mob (a, i);
+  }
+}
+void mob(int tim, int q ) {
+
+  digitalWrite(q, 1);
+  delay(tim);
+  digitalWrite(q, 0);
+  delay(tim);
+  //проверить код
+}
